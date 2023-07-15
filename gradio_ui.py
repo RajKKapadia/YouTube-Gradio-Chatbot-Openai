@@ -4,7 +4,7 @@ from utils import generate_response
 
 with gr.Blocks() as demo:
 
-    chatbot = gr.Chatbot(label='Openai Chatbot')
+    chatbot = gr.Chatbot(label='Openai Chatbot', height=750)
     msg = gr.Textbox()
     clear = gr.ClearButton([msg, chatbot])
     
